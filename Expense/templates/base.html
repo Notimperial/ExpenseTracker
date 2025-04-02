@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Expense Tracker {% endblock %} </title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href = "/">Home</a>
+                    <a href = "/add_expense">Add Expense</a>
+                    <a href = "/view_expenses">View Expenses</a>
+                    <a href = "/edit_expense">Edit Expense</a>
+                    <a href = "/delete_expense">Delete Expense</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class = "container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <footer>
+        <p>&copy; 2025 Expense Tracker</p>
+    </footer>
+
+</body>
+</html>
