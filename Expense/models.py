@@ -8,6 +8,9 @@ class Expense(models.Model):
     date_created = models.DateTimeField(auto_now = True)
     date_updated = models.DateTimeField(auto_now= True)
     description = models.TextField(blank = True)
+
+    def __str__(self):
+        return self.name
     
 
     class Meta:
