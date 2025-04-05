@@ -2,10 +2,9 @@
 
 {% block title %} View Expenses {% endblock %}
 
-
 {% block content %}
 <h1>View Expenses</h1>
-{% endblock %}
+
 <table>
     <tr>
         <th>ID</th>
@@ -15,15 +14,16 @@
         <th>Description</th>
     </tr>
 
-    {% for expense in expenses %}
+    {% for expense in expense_view %}
     <tr>
         <td>{{ expense.id }}</td>
-        <td>{{ expense.title }}</td>
+        <td>{{ expense.name }}</td>
         <td>{{ expense.amount }}</td>
-        <td>{{ expense.date }}</td>
+        <td>{{ expense.date_created }}</td>
         <td>{{ expense.description }}</td>
+        <td><a href="{% url 'Expense:ExpenseUpdateView' expense.id %}">Edit</a></td>
+        <td><a href="{% url 'Expense:ExpenseDeleteView' expense.id %}">Delete</a></td>
     </tr>
     {% endfor %}
-
-    
 </table>
+{% endblock %}

@@ -5,9 +5,18 @@
 {% endblock %}
 
 {% block content %}
-    <h1> add expense </h1>
-    <form method = 'post'>
-        {%csrf_token%}
+
+    <!-- Display success message if it exists -->
+    {% if success_message %}
+    <div class="success">
+        <p>{{ success_message }}</p>
+    </div>
+    {% endif %}
+
+    <h1>Add Expense</h1>
+
+    <form method="post">
+        {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Add Expense</button>
     </form>

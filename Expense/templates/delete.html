@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    Delete Expense
+{% endblock %}
+
+{% block content %}
+    <h1>Delete Expense</h1>
+
+    <p>Are you sure you want to delete this expense?</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Confirm Delete</button>
+    </form>
+
+    <a href="{% url 'Expense:ExpenseViewView' %}">Cancel</a>
+{% endblock %}
