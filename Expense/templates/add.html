@@ -18,7 +18,8 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Add Expense</button>
+        <button type="submit" class="add-button">Add Expense</button>
     </form>
+    <button class="back-button"><a href="{% url 'Expense:ExpenseViewView' %}">Back</a></button>
 
 {% endblock %}

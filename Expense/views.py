@@ -11,7 +11,7 @@ def Home(request):
 
 
 def ExpenseAddView(request):
-    success_message = "None"
+    success_message = "Add Your Expense"
     if request.method == 'POST':
         form = ExpenseForm(request.POST)
         if form.is_valid():

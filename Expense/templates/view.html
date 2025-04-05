@@ -6,24 +6,30 @@
 <h1>View Expenses</h1>
 
 <table>
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Amount</th>
-        <th>Date</th>
-        <th>Description</th>
-    </tr>
-
-    {% for expense in expense_view %}
-    <tr>
-        <td>{{ expense.id }}</td>
-        <td>{{ expense.name }}</td>
-        <td>{{ expense.amount }}</td>
-        <td>{{ expense.date_created }}</td>
-        <td>{{ expense.description }}</td>
-        <td><a href="{% url 'Expense:ExpenseUpdateView' expense.id %}">Edit</a></td>
-        <td><a href="{% url 'Expense:ExpenseDeleteView' expense.id %}">Delete</a></td>
-    </tr>
-    {% endfor %}
+    <thead>
+        <tr>
+            <th class="detail">ID</th>
+            <th class="detail">Title</th>
+            <th class="detail">Amount</th>
+            <th class="detail">Date</th>
+            <th class="detail">Description</th>
+            <th class="detail">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for expense in expense_view %}
+        <tr>
+            <td class="shown">{{ expense.id }}</td>
+            <td class="shown">{{ expense.name }}</td>
+            <td class="shown">{{ expense.amount }}</td>
+            <td class="shown">{{ expense.date_created }}</td>
+            <td class="shown">{{ expense.description }}</td>
+            <td class="actions">
+                <a href="{% url 'Expense:ExpenseUpdateView' expense.id %}" class="btn edit-btn">Edit</a>
+                <a href="{% url 'Expense:ExpenseDeleteView' expense.id %}" class="btn delete-btn">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
 </table>
 {% endblock %}

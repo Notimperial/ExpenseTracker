@@ -1,0 +1,170 @@
+h2{
+    color: brown;
+}
+
+body{
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+
+}
+
+h1{
+    color: rgb(252, 249, 248);
+}
+
+.home_paragraph{
+    color: rgb(245, 225, 220);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid rgb(154, 25, 218);
+    padding: 15px;
+    border-radius: 14px;
+    margin: 20px auto;
+    background-color: rgb(227, 137, 152);
+    width: 60%;
+    text-align: center; 
+
+}
+
+.styled-input{
+    color:rgb(0, 0, 0);
+    background-color: rgb(176, 187, 247);
+    border: 2px solid #000000;
+    border-radius: 5px; 
+    border-radius: 12px;
+    margin: 15px 0;
+    padding: 4px;
+    margin: 10px 0;
+    opacity: 0.5;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+    
+    
+    
+
+}
+
+.styled-input:hover {
+    border-color: #007bff;
+    background-color: #a8c9ee;
+  }
+
+.add-button{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background-color: rgb(60, 117, 250);
+    border: 2px solid #000000; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+    margin-bottom: 10px;
+
+}
+
+.add-button:hover {
+    background-color: #1e37c4; /* Darker green */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+
+.back-button{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background-color: rgb(60, 117, 250);
+    border: 2px solid #000000; 
+    border-radius: 5px; 
+    padding: 5px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+    
+}
+
+.bacl-button:hover{
+
+    background-color: #1e37c4; 
+    cursor: pointer; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .nav {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underlines */
+    margin: 0 15px; /* Space between each nav item */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.navbar{
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center; /* Centers the items vertically */
+    border-radius: 25px;
+}
+
+.nav:hover {
+    background-color: #575757; /* Darker shade on hover */
+    color: #f0f0f0; /* Change text color when hovering */
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders between table cells are collapsed */
+    margin-bottom: 20px; /* Adds space below the table */
+}
+
+th, td {
+    padding: 12px 20px; /* Adds padding inside the table cells */
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid #dddddd; /* Adds a border to cells */
+}
+
+th {
+    background-color: #f4f4f4; /* Adds a background color to table headers */
+}
+
+tr:hover {
+    background-color: #ffffff; /* Changes background color on hover */
+    transition: background-color 0.4s ease; /* Smooth background transition */
+
+}
+
+.actions {
+    text-align: center; /* Centers the action buttons */
+}
+
+.actions .btn {
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    display: inline-block;
+}
+
+.actions .edit-btn {
+    background-color: #4CAF50; /* Green for Edit */
+}
+
+.actions .edit-btn:hover {
+    background-color: #45a049;
+}
+
+.actions .delete-btn {
+    background-color: #f44336; /* Red for Delete */
+}
+
+.actions .delete-btn:hover {
+    background-color: #da190b;
+}
+
+.shown {
+    text-align: center; /* Centers the text in data cells */
+}

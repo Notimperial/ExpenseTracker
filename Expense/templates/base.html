@@ -1,18 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Expense/css/main.css' %}">
     <title>{% block title %} Expense Tracker {% endblock %} </title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class = "navbar">
             <ul>
                 <li>
-                    <a href = "/home">Home</a>
-                    <a href = "/add">Add Expense</a>
-                    <a href = "/view">View Expenses</a>
+                    <a href = "/home" class = "nav">Home</a>
+                    <a href = "/add" class = "nav">Add Expense</a>
+                    <a href = "/view" class = "nav">View Expenses</a>
                     
                 </li>
             </ul>
